@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="/favicon.png" />
+
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>Ebook Reader</title>
+
+  <style>
+    /* General page styles */
+    body {
+      background: linear-gradient(to right, #f39c12, #8e44ad);
+      color: #333;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .navbar {
+      background-color: #2c3e50;
+    }
+
+    .navbar-brand {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #f1c40f;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .navbar-brand:hover {
+      transform: scale(1.1);
+    }
+
+    .jumbotron {
+      background: rgba(255, 255, 255, 0.7);
+      padding: 40px;
+      border-radius: 10px;
+      animation: fadeIn 2s ease;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    .btn-success {
+      background-color: #28a745;
+      border: none;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .btn-success:hover {
+      background-color: #2ecc71;
+      transform: scale(1.1);
+    }
+
+    .main {
+      padding: 20px;
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .fakeimg img {
+      width: 100%;
+      border-radius: 15px;
+      transition: transform 0.3s ease;
+    }
+
+    .fakeimg img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Animation for footer */
+    .footer {
+      padding: 20px;
+      text-align: center;
+      background: #2c3e50;
+      color: white;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .footer p {
+      animation: slideIn 3s ease;
+    }
+
+    @keyframes slideIn {
+      from {
+        transform: translateX(-100%);
+      }
+      to {
+        transform: translateX(0);
+      }
+    }
+
+    /* Animations for hover effects on text and links */
+    h2, h5 {
+      color: #34495e;
+      transition: color 0.3s ease;
+    }
+
+    h2:hover, h5:hover {
+      color: #e74c3c;
+    }
+
+    .nav-link:hover {
+      color: #f39c12 !important;
+      transition: color 0.3s ease;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="home.html">EBOOK</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="home.html">Home<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="signup.php">SignUp</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login.php">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="books.php">Books</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="jumbotron text-center">
+    <h1 class="display-4">Hello, Readers</h1>
+    <p class="lead">This is a simple ebook reader website which lets you read your favourite books with the best
+      interface and easy to navigate. Hope you like it.</p>
+    <hr class="my-4">
+    <p>The books are downloadable in your system, just simply sign-up to the website.</p>
+    <p class="lead">
+      <a class="btn btn-success btn-lg" href="signup.php" role="button">Sign-up here</a>
+    </p>
+  </div>
+
+  <div class="container">
+    <div class="main">
+      <h2>Book Recommendation</h2>
+      <h5>Shalini Singh, Sep 27, 2024</h5>
+      <div class="fakeimg">
+        <img src="Neil Gaiman.jpg" alt="Neil Gaiman">
+      </div>
+
+      <div class="d-inline-flex bg-info opacity-10 border border-info rounded-pill w-50 p-2 mb-4">
+        <p class="text-light p-3">Hello! One of my siblings worships Terry Pratchett and the other day we just sat and read some of the best
+          stuff he's written in the Discworld series and man. Genius writing. Very few people use language the way he
+          does.
+          Bonus for everyone on this forum! This photo is Neil Gaiman's acceptance speech for his Hugo Award. Why should I
+          be the only one crying!</p>
+      </div>
+
+      <h2>Atomic Habits</h2>
+      <h5>James Clear , October 16, 2018</h5>
+      <img src="atomic.jpg" alt="Neil Gaiman">
+      <p>Atomic Habits by James Clear is a self-help book focused on the power of small, incremental changes in building and sustaining good habits. The central idea is that making tiny, consistent improvements, or "atomic habits," leads to significant, long-term success. Clear emphasizes the importance of systems over goals, suggesting that by focusing on daily actions and routines, success follows naturally.
+
+        The book presents a framework for habit formation, which includes:
+        1. Cue : A trigger that initiates the habit.
+        2. Craving : The desire or motivation behind the habit.
+        3. Response : The actual habit or behavior.
+        4. Reward : The positive outcome that reinforces the habit.
+        
+        Clear also discusses how to break bad habits by reversing this framework and offers practical strategies to make good habits easier and bad habits harder. The book combines scientific research, personal anecdotes, and practical advice, making it accessible and actionable for readers looking to improve any area of their lives.</p>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>Copyrights © Ebook Reader Website 2024 | All rights reserved</p>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
